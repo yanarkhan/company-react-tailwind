@@ -3,3 +3,7 @@
 body {
   font-family: "Jost", sans-serif;
 }
+
+header {
+  z-index: 1001 !important;
+}

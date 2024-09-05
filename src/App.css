@@ -7,3 +7,11 @@ body {
 header {
   z-index: 1001 !important;
 }
+
+.gradientBg {
+  background: linear-gradient(99deg, #ee9ae5 0%, #5961f9 100%);
+}
+
+.btnPrimary {
+  @apply py-3 px-8 bg-secondary text-white font-semibold rounded hover:bg-primary transition-all duration-300;
+}

@@ -19,7 +19,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <header className="bg-white max-w-screen-2xl mx-auto p-4 text-primary fixed top-0 right-0 left-0 md:px-14 ">
+      <header className="bg-white max-w-screen-2xl mx-auto p-4 text-primary border-b fixed top-0 right-0 left-0 md:px-14 ">
         <nav className="container mx-auto flex items-center justify-between text-lg font-medium">
           <div className="flex space-x-14 items-center">
             <a

@@ -4,7 +4,7 @@ import Banner from "../shared/Banner";
 
 const Home = () => {
   return (
-    <main className="p-4 max-w-screen-2xl mx-auto mt-24 md:px-14">
+    <section className="p-4 max-w-screen-2xl mx-auto mt-24 md:px-14">
       <Banner
         banner={bannerLogo}
         heading="Develop your skills without diligence"
@@ -12,7 +12,7 @@ const Home = () => {
         btnOne="Get Started"
         btnTwo="Discount"
       />
-    </main>
+    </section>
   );
 };
 

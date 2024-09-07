@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = ({ banner, heading, subHeading, btnOne, btnTwo }) => {
   return (
-    <section className="gradientBg rounded-xl rounded-br-[80px] px-4 py-9 md:p-9">
+    <div className="gradientBg rounded-xl rounded-br-[80px] px-4 py-9 md:p-9">
       <div className="flex flex-col justify-between items-center gap-10 md:flex-row-reverse">
         {/* Banner Img */}
         <div>
@@ -20,7 +20,7 @@ const Banner = ({ banner, heading, subHeading, btnOne, btnTwo }) => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

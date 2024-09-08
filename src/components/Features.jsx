@@ -19,7 +19,7 @@ const Features = () => {
           <h3 className="text-3xl text-primary font-bold mb-3 lg:w-1/2">
             Why we are better than others
           </h3>
-          <p className="text-base text-tertiary max-w">
+          <p className="text-base text-tertiary">
             A simple paragraph is comprised of three major components. The first
             sentence, which is often a declarative sentence, is called the
             “topic sentence.”

@@ -14,9 +14,9 @@ const Banner = ({ banner, heading, subHeading, btnOne, btnTwo }) => {
             {heading}
           </h2>
           <p className="text-[#EBEBEB] text-2xl mb-8">{subHeading}</p>
-          <div className="space-x-5 space-y-4">
-            <button className="btnPrimary">{btnOne}</button>
-            <button className="btnPrimary">{btnTwo}</button>
+          <div className="flex flex-col md:flex-row gap-4">
+            <button className="btnPrimary w-fit">{btnOne}</button>
+            <button className="btnPrimary w-fit">{btnTwo}</button>
           </div>
         </div>
       </div>

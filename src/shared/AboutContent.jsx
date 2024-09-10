@@ -1,3 +1,5 @@
+import React from "react";
+
 const AboutContent = ({
   imageSrc,
   title,
@@ -10,13 +12,13 @@ const AboutContent = ({
     <div
       className={`flex flex-col justify-between items-center gap-8 ${
         reverse ? "md:flex-row-reverse" : "md:flex-row"
-      } lg:px-12`}
+      } lg:px-14`}
     >
       <div className="md:w-1/2">
         <img src={imageSrc} alt="About Image" />
       </div>
 
-      <div className="w-3/5">
+      <div className="md:w-2/5">
         <h2
           className={`text-3xl font-bold text-primary mb-5 md:leading-normal md:text-5xl  ${
             useMaxWidth ? "max-w-lg" : "max-w-xl"

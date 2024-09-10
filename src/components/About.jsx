@@ -11,16 +11,15 @@ const About = () => {
         title="We have been improving our product"
         highlight="for many years."
         text="A good example of a paragraph contains a topic conclusion. 'There are many different kinds of animals that live in China."
-        useMaxWidth={true}
+        useMaxWidth
       />
 
       <AboutContent
         imageSrc={aboutImgRight}
         title="You can Practice at any"
-        highlight="time convenient for you."
+        highlight="time convinent for you."
         text="A good example of a paragraph contains a topic conclusion. 'There are many different kinds of animals that live in China."
         reverse
-        useMaxWidth={false}
       />
     </section>
   );

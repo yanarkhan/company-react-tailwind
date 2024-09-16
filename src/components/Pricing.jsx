@@ -11,6 +11,7 @@ const Pricing = () => {
       yearlyPrice: 199,
       description:
         "A common form of Lorem ipsum reads: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      green: "/src/assets/greenRec.png",
     },
 
     {
@@ -19,6 +20,7 @@ const Pricing = () => {
       yearlyPrice: 399,
       description:
         "A common form of Lorem ipsum reads: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      green: "/src/assets/greenRec.png",
     },
 
     {
@@ -27,6 +29,7 @@ const Pricing = () => {
       yearlyPrice: 599,
       description:
         "A common form of Lorem ipsum reads: Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      green: "/src/assets/greenRec.png",
     },
   ];
 
@@ -84,6 +87,51 @@ const Pricing = () => {
                 /{isYearly ? "year" : "month"}
               </span>
             </p>
+            <ul className="mt-4 px-4 space-y-2">
+              <li className="flex items-center gap-3 ">
+                <img
+                  src={pkg.green}
+                  alt="Green Rectangle"
+                  className="w-4 h-4"
+                />{" "}
+                Video of Lessons
+              </li>
+              <li className="flex items-center gap-3 ">
+                <img
+                  src={pkg.green}
+                  alt="Green Rectangle"
+                  className="w-4 h-4"
+                />{" "}
+                Homework check
+              </li>
+              <li className="flex items-center gap-3 ">
+                <img
+                  src={pkg.green}
+                  alt="Green Rectangle"
+                  className="w-4 h-4"
+                />{" "}
+                Additional practical task
+              </li>
+              <li className="flex items-center gap-3 ">
+                <img
+                  src={pkg.green}
+                  alt="Green Rectangle"
+                  className="w-4 h-4"
+                />{" "}
+                Monthly conferences
+              </li>
+              <li className="flex items-center gap-3 ">
+                <img
+                  src={pkg.green}
+                  alt="Green Rectangle"
+                  className="w-4 h-4"
+                />{" "}
+                Personal advice from teachers
+              </li>
+            </ul>
+            <div className="w-full mx-auto mt-8 flex items-center justify-center">
+              <button className="btnPrimary">Get started</button>
+            </div>
           </div>
         ))}
       </div>

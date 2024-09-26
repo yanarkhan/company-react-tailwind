@@ -5,7 +5,10 @@ import AboutContent from "../shared/AboutContent";
 
 const About = () => {
   return (
-    <section className="max-w-screen-2xl mx-auto p-4 space-y-10 md:px-14">
+    <section
+      className="max-w-screen-2xl mx-auto p-4 space-y-10 md:px-14"
+      id="about"
+    >
       <AboutContent
         imageSrc={aboutImgLeft}
         title="We have been improving our product"

@@ -1,4 +1,6 @@
 import React from "react";
+import { fadeIn } from "../variants";
+import { motion } from "framer-motion";
 
 const AboutContent = ({
   imageSrc,
@@ -14,11 +16,23 @@ const AboutContent = ({
         reverse ? "md:flex-row-reverse" : "md:flex-row"
       } lg:px-14`}
     >
-      <div className="md:w-1/2">
+      <motion.div
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="md:w-1/2"
+      >
         <img src={imageSrc} alt="About Image" />
-      </div>
+      </motion.div>
 
-      <div className="md:w-2/5">
+      <motion.div
+        variants={fadeIn("left", 0.4)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="md:w-2/5"
+      >
         <h2
           className={`text-3xl font-bold text-primary mb-5 md:leading-normal md:text-5xl  ${
             useMaxWidth ? "max-w-lg" : "max-w-xl"
@@ -29,7 +43,7 @@ const AboutContent = ({
         </h2>
         <p className="text-lg text-tertiary mb-7 max-w-lg">{text}</p>
         <button className="btnPrimary">Get Started</button>
-      </div>
+      </motion.div>
     </div>
   );
 };

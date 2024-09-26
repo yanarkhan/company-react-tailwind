@@ -1,5 +1,7 @@
 import React from "react";
 import featuredImg from "../assets/feature.png";
+import { fadeIn } from "../variants";
+import { motion } from "framer-motion";
 
 const Features = () => {
   const cardClasses =
@@ -12,10 +14,19 @@ const Features = () => {
   ];
 
   return (
-    <section className="max-w-screen-2xl mx-auto my-24 px-4 md:px-14">
+    <section
+      className="max-w-screen-2xl mx-auto my-24 px-4 md:px-14"
+      id="feature"
+    >
       <div className="flex flex-col justify-between items-start gap-10 lg:flex-row">
         {/* Left Side */}
-        <div className="lg:w-1/4">
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="lg:w-1/4"
+        >
           <h3 className="text-3xl text-primary font-bold mb-3 lg:w-1/2">
             Why we are better than others
           </h3>
@@ -24,9 +35,16 @@ const Features = () => {
             sentence, which is often a declarative sentence, is called the
             “topic sentence.”
           </p>
-        </div>
+        </motion.div>
+
         {/* Right Side | Cards */}
-        <div className="w-full lg:w-3/4">
+        <motion.div
+          variants={fadeIn("up", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="w-full lg:w-3/4"
+        >
           <div className="grid grid-cols-1 items-start gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-12">
             {featuresData.map((feature, index) => (
               <div
@@ -42,7 +60,7 @@ const Features = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

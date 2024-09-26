@@ -1,5 +1,7 @@
 import React from "react";
 import { useState } from "react";
+import { fadeIn } from "../variants";
+import { motion } from "framer-motion";
 
 const Pricing = () => {
   const [isYearly, setIsYearly] = useState(false);
@@ -34,7 +36,10 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="max-w-screen-2xl mx-auto p-4 py-10 md:px-14">
+    <section
+      className="max-w-screen-2xl mx-auto p-4 py-10 md:px-14"
+      id="pricing"
+    >
       <div className="text-center">
         <h2 className="text-3xl font-extrabold text-primary mb-2 md:text-5xl">
           Here are all our plans
@@ -71,7 +76,13 @@ const Pricing = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid mx-auto gap-10 mt-20 sm:grid-cols-2 md:grid-cols-3 md:w-11/12">
+      <motion.div
+        variants={fadeIn("up", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.5 }}
+        className="grid mx-auto gap-10 mt-20 sm:grid-cols-2 md:grid-cols-3 md:w-11/12"
+      >
         {packages.map((pkg, index) => (
           <div
             key={index}
@@ -134,7 +145,7 @@ const Pricing = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };

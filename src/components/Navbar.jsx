@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 /* React Icon */
 import { GrLanguage } from "react-icons/gr";
 import { FaBars, FaXmark } from "react-icons/fa6";
+import { Link } from "react-scroll";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,13 +38,17 @@ export const Navbar = () => {
             {/* NavItem */}
             <ul className="hidden space-x-12 md:flex ">
               {navItems.map(({ link, path }) => (
-                <a
+                <Link
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
                   key={link}
-                  href={path}
-                  className="block transition duration-400 hover:text-gray-300"
+                  to={path}
+                  className="cursor-pointer block transition duration-400 hover:text-gray-300"
                 >
                   {link}
-                </a>
+                </Link>
               ))}
             </ul>
           </div>
@@ -85,13 +90,18 @@ export const Navbar = () => {
         }`}
       >
         {navItems.map(({ link, path }) => (
-          <a
+          <Link
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-80}
             key={link}
-            href={path}
-            className="block transition duration-400 hover:text-gray-300"
+            to={path}
+            className="block text-white transition duration-400 hover:text-gray-300"
+            onClick={toggleMenu}
           >
             {link}
-          </a>
+          </Link>
         ))}
       </div>
     </>

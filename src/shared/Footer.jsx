@@ -4,10 +4,18 @@ import igImg from "../assets/IG.png";
 import fbImg from "../assets/FB.png";
 import logo from "../assets/logo.png";
 import React from "react";
+import { fadeIn } from "../variants";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#010851] max-w-screen-2xl mx-auto text-white p-4 md:px-14">
+    <motion.footer
+      variants={fadeIn("down", 0.1)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.7 }}
+      className="bg-[#010851] max-w-screen-2xl mx-auto text-white p-4 md:px-14"
+    >
       <div className="my-12 flex flex-col gap-8 md:flex-row">
         <div className="md:w-1/2 space-y-8">
           <a
@@ -121,7 +129,7 @@ const Footer = () => {
           />
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

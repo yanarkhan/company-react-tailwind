@@ -56,10 +56,10 @@ const Pricing = () => {
             className="inline-flex items-center cursor-pointer"
           >
             <span className="text-2xl font-semibold mr-8">Monthly</span>
-            <div className="w-14 h-6 bg-gray-300 rounded-full transition duration-200 ease-in-out">
+            <div className="w-14 h-6 bg-gray-300 rounded-full transition duration-200 ease-in-out relative">
               <div
-                className={`w-6 h-6 rounded-full transition duration-200 ease-in-out ${
-                  isYearly ? "bg-primary" : "bg-gray-500"
+                className={`w-6 h-6 rounded-full transition duration-200 ease-in-out transform ${
+                  isYearly ? "translate-x-8 bg-primary" : "bg-gray-500"
                 }`}
               ></div>
             </div>
@@ -69,7 +69,7 @@ const Pricing = () => {
             type="checkbox"
             id="toggle"
             checked={isYearly}
-            onClick={() => setIsYearly(!isYearly)}
+            onChange={() => setIsYearly(!isYearly)} // Use onChange for toggling the state
             className="hidden"
           />
         </div>

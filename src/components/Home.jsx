@@ -9,6 +9,7 @@ const Home = () => {
         banner={bannerLogo}
         heading="Develop your skills without diligence"
         subHeading="A good example of a paragraph contains a topic sentence, details and a conclusion. 'There are many different kinds of animals that live in China."
+        styles={"md:w-3/5"}
         btnOne="Get Started"
         btnTwo="Discount"
       />

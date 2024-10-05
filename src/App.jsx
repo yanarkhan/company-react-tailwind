@@ -10,13 +10,15 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Navbar />
-      <Home />
-      <Features />
-      <About />
-      <Pricing />
-      <Newsletter />
-      <Footer />
+      <div className="overflow-hidden">
+        <Navbar />
+        <Home />
+        <Features />
+        <About />
+        <Pricing />
+        <Newsletter />
+        <Footer />
+      </div>
     </>
   );
 }

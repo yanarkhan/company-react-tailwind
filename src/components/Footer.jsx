@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import logo from "../assets/logo.png";
 import SubscribeForm from "../shared/SubscribeForm";
 import FooterNavSection from "../shared/FooterNavSection";
-import { footerNavData, socialMediaIcons } from "../shared/footerData";
+import { FooterNavData, socialMediaIcons } from "../shared/FooterData";
 
 const Footer = () => {
   return (
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col flex-wrap justify-between items-start gap-5 md:w-2/3 md:flex-row">
-          {footerNavData.map((section, index) => (
+          {FooterNavData.map((section, index) => (
             <FooterNavSection
               key={index}
               title={section.title}

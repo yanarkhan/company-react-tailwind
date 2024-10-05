@@ -42,7 +42,7 @@ const Features = () => {
           variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.4 }}
           className="w-full lg:w-3/4"
         >
           <div className="grid grid-cols-1 items-start gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-12">

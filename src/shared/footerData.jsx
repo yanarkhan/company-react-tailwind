@@ -4,7 +4,7 @@ import igImg from "../assets/IG.png";
 import twitterImg from "../assets/Twitter.png";
 import linkedInImg from "../assets/LinkedIn.png";
 
-export const footerNavData = [
+export const FooterNavData = [
   {
     title: "Platform",
     links: ["Overview", "Features", "About", "Pricing"],

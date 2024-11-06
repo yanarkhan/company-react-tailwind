@@ -24,10 +24,10 @@ const Features = () => {
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: true, amount: 0.7 }}
           className="lg:w-1/4"
         >
-          <h3 className="text-3xl text-primary font-bold mb-3 lg:w-1/2">
+          <h3 className="md:max-w-40 text-3xl text-primary font-bold mb-3 lg:w-1/2">
             Why we are better than others
           </h3>
           <p className="text-base text-tertiary">
@@ -42,7 +42,7 @@ const Features = () => {
           variants={fadeIn("up", 0.3)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.4 }}
           className="w-full lg:w-3/4"
         >
           <div className="grid grid-cols-1 items-start gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-12">
@@ -53,7 +53,7 @@ const Features = () => {
               >
                 <div>
                   <img src={featuredImg} alt="Featured Image" />
-                  <h5 className="text-2xl text-primary font-semibold text-center px-5 mt-5">
+                  <h5 className="max-w-32 text-2xl text-primary font-semibold text-left px-5 mt-5">
                     {feature.title}
                   </h5>
                 </div>

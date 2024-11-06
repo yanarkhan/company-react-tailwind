@@ -85,7 +85,7 @@ export const Navbar = () => {
 
       {/* NavLinks for Mobile */}
       <div
-        className={`text-xl space-y-4 px-4 pt-24 pb-5 bg-secondary ${
+        className={`z-10 text-xl space-y-4 px-4 pt-24 pb-5 bg-secondary rounded-b-md ${
           isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
         }`}
       >

@@ -12,11 +12,11 @@ const Footer = () => {
       variants={fadeIn("down", 0.1)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{ once: false, amount: 0.7 }}
+      viewport={{ once: false, amount: 0.4 }}
       className="bg-[#010851] max-w-screen-2xl mx-auto text-white p-4 md:px-14"
     >
       <div className="my-12 flex flex-col md:px-10 gap-x-16 md:flex-row">
-        <div className="md:w-1/3 mt-3">
+        <div className="md:w-2/5 mt-3">
           <a
             href="/"
             className="text-2xl font-semibold text-primary flex items-center space-x-3"
@@ -28,7 +28,7 @@ const Footer = () => {
             />
             <span className="text-white">ReactJS</span>
           </a>
-          <p className="mt-10 text-white max-w-lg">
+          <p className="mt-10 text-white max-w-[440px]">
             A simple paragraph is comprised of three major components. The first
             sentence, which is often a declarative sentence.
           </p>
@@ -36,7 +36,7 @@ const Footer = () => {
           <SubscribeForm />
         </div>
 
-        <div className="flex flex-col flex-wrap justify-between items-start gap-5 md:w-2/3 md:flex-row">
+        <div className="flex flex-col flex-wrap justify-between items-start gap-5 md:w-3/5 md:flex-row">
           {FooterNavData.map((section, index) => (
             <FooterNavSection
               key={index}

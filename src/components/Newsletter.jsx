@@ -11,6 +11,7 @@ const Newsletter = () => {
         subHeading={`A simple paragraph is comprised of three major components. The first sentence, which is often a declarative sentence, is called the “topic sentence.”`}
         styles={"md:w-3/4"}
         btnOne="I have a code"
+        btnClass="rounded-2 xl"
       />
     </div>
   );

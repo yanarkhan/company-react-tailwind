@@ -13,7 +13,7 @@ header {
 }
 
 .btnPrimary {
-  @apply py-3 px-8 bg-secondary text-white font-semibold rounded-lg hover:bg-primary transition-all duration-300;
+  @apply py-3 px-8 bg-secondary text-white font-semibold rounded-sm hover:bg-primary transition-all duration-300;
 }
 
 .btnPrimaryOutline {

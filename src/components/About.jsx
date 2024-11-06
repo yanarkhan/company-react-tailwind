@@ -6,7 +6,7 @@ import AboutContent from "../shared/AboutContent";
 const About = () => {
   return (
     <section
-      className="max-w-screen-2xl mx-auto p-4 space-y-10 md:px-14"
+      className="max-w-screen-2xl mx-auto p-4 mb-16 space-y-10 md:px-14"
       id="about"
     >
       <AboutContent

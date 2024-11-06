@@ -35,7 +35,7 @@ const AboutContent = ({
       >
         <h2
           className={`text-3xl font-bold text-primary mb-5 md:leading-normal md:text-5xl  ${
-            useMaxWidth ? "max-w-lg" : "max-w-xl"
+            useMaxWidth ? "md:max-w-lg" : "md:max-w-xl"
           }
           }`}
         >

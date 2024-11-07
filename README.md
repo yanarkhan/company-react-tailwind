@@ -64,6 +64,10 @@ pnpm build
 
 The production-ready files will be in the `dist/` folder.
 
+## 🌍 Live Demo
+
+You can view the live demo of the project here: [Company React with Tailwind](https://company-react-tailwind.vercel.app/)
+
 ## 📜 License
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/yanarkhan/company-react-tailwind/blob/main/LICENSE) file for details.

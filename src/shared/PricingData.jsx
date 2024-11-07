@@ -1,4 +1,3 @@
-// shared/pricingData.js
 export const packages = [
   {
     name: "Start",

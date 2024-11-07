@@ -1,4 +1,3 @@
-// shared/footerData.js
 import fbImg from "../assets/FB.png";
 import igImg from "../assets/IG.png";
 import twitterImg from "../assets/Twitter.png";
